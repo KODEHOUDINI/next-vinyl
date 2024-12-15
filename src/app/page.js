@@ -1,9 +1,14 @@
-import styles from "./page.module.css";
+import VinylPlayerAnimation from "@/Components/VinylPlayerAnimation/VinylPlayerAnimation";
+import SampleCoverImage from "/public/sample-cover.png";
 
 export default function Home() {
   return (
     <>
-      <h1>Hello</h1>
+      <VinylPlayerAnimation
+        textsPrimary={["Fly To the moon now", "Fly To the moon now", "Fly To the moon now"]}
+        textSecondary={"THROWBACK MUSIC VOL"}
+        coverImg={SampleCoverImage}
+      />
     </>
   );
 }
